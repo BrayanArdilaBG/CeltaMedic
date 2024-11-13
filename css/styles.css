@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+   
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    background: url("../img/header.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* Apuntamos a la barra de navegación que está dentro de header */
+header nav{
+    /* background-color: red; */
+    display: flex;
+    /* height: 400px; */
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 0;
+    
+    
+
+}
+
+header nav img{
+    width: 330px;
+    padding: 30px;
+}
+
+
+header ul a{
+    color: white;
+    font-size: 20px;
+    margin: 0 18px;
+    text-decoration: none;
+    transition: .6s;
+}
+
+header ul a:hover{
+    border-bottom: 2px solid #fff;
+}
+
+#hero{
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 210px;
+    
+}
+
+#hero h2{
+    color: #FFFFFF;
+    font-size: 60px;
+}
+
+#hero h1 {
+    color: #56BF84;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+#hero img{
+    height: 100px;
+}
+
+#citas{
+    background: #56BF84;
+}
+
+#hero button{
+    background-color: #1B618C;
+    color: #ffffff;
+    font-size: 32px;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border-color: transparent;
+    cursor: pointer;
+    text-shadow: 2px 2px 2px #222222;
+    transition: all 300ms;
+}
+
+hr{
+    text-align: center;
+    border-color: #000000;
+    width: auto;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+#instalaciones h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+    color: #1B618C;
+    bottom: 10px;
+    padding: 10px;
+}
+
+#instalaciones{
+    background: #ffffff9c;
+    padding: 5%;
+}
+
+.slider-frame {
+	width: 1280px;
+    height: 720px;
+    margin:50px auto 0;
+	overflow: hidden;
+}
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 1280px;
+	height: 800;
+	object-fit: cover;
+    border: 5px solid #000000
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+#citas{
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+    bottom: 25px;
+
+}
+#citas h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #1B618C;
+}
+
+#citas p{
+    font-size: 22px;
+    color: #fff;
+}
+
+#citas .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#citas article{
+    margin: 0 40px;
+    position: relative;
+}
+
+#citas article h3{
+    position: absolute;
+    z-index: 9;
+    top: -40px;
+    width: 100%;
+    text-align: center;
+    color: #FFFF;
+}
+
+#citas h3{
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+    top: -500px;
+    font-size: 30px;
+}
+
+#citas img{
+    max-width: 100%;
+    border-radius: 30px;
+    transition: 1s;
+    height: 250px;
+    border: 5px solid #000000;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+main h2{
+    color: #4E4FEB;
+}
+
+main p{
+    color: #ffffffb9;
+}
+
+#sucursales{
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+    height: 1280px;
+    width: auto;
+    background: #222222;
+
+}
+#sucursales h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #4E4FEB;
+}
+
+#sucursales .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#sucursales article{
+    margin: 0 40px;
+    position: relative;
+}
+
+#sucursales article h3{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#sucursales img{
+    height: 300px;
+    border: 5px solid #000000;
+    max-width: 100%;
+    border-radius: 30px;
+    transition: 1s;
+    height: 250px;
+    border: 5px solid #000000;
+}
+
+#beneficios{
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+#beneficios img{
+    height: 250px;
+    align-items: center;
+    padding: 10px;
+    align-items: 50px;
+    width: 250px;
+    border: 15px solid #068FFF;
+    border-radius: 30px;
+  }
+
+#beneficios h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #56BF84;
+}
+
+#beneficios .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#beneficios article{
+    margin: 0 40px;
+    position: relative;
+}
+
+#beneficios{
+    width: 100%;
+    padding: 120px 0;
+    text-align: center;
+}
+
+#descuentos{
+    background: #068FFF;
+    background-size: auto;
+}
+
+#descuentos h2{
+    text-align: center;
+    font-size: 40px;
+    top: 100px;
+    padding: 4%;
+    color: #ffffff;
+}
+
+#descuentos .fila{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#descuentos img{
+    width: 250px;
+    align-items: center;
+    width: 250px;
+    padding-left: 10px;
+    padding: 60px;
+    border-radius: 60px;
+}
+
+#descuentos h3{
+    font-size: 33px;
+    text-align: center;
+    top: 100px;
+    padding: 4%;
+    text-align: center;
+}
+
+#contacto h2{
+    font-size: 50px;
+    color: #068FFF;
+}
+
+#contacto p{
+    font-size: 20px;
+}
+
+#contacto{
+    width: 100%;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #56BF84;
+}
+
+#contacto form{
+    width: 50%;
+    margin: 40px auto;
+    
+}
+
+#contacto input,
+#contacto select{
+    width: 40%;
+    padding: 8px 14px;
+    font-size: 20px;
+    margin: 10px;
+    
+}
+
+#contacto button{
+    padding: 14px 30px;
+    font-size: 20px;
+    background-color: #068FFF;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 60px;
+    border-color: transparent;
+
+}
+
+#contacto h2{
+    color: #fff;
+}
+
+footer{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
